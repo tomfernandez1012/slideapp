@@ -3,6 +3,19 @@
 		<title>Slide Terms and Conditions</title>
 	</head>
 <body>
+	<h1 id='here'></h1>
+  <script>
+  // Get URL parameters
+  function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+  };
+  var email = getUrlParameter('email');
+  var code = getUrlParameter('code');
+  document.getElementById("here").innerHTML = email + " - " + code;
+</script>
 <p><strong><em><u>Welcome to Slide software and services!</u></em></strong></p>
 <p><strong>Contents:</strong></p>
 <p>1 Scope of Contents</p>

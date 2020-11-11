@@ -17,7 +17,6 @@
         };
         var email = getUrlParameter('email');
         var code = getUrlParameter('code');
-        document.getElementById("here").innerHTML = email + " - " + code;
         $(document).ready(function () {
             $.ajax({
                 type: "POST",
